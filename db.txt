@@ -1,0 +1,12 @@
+//Tablo Ekleme sql ifadesi
+
+CREATE TABLE [dbo].[User] (
+    [Id]       INT            IDENTITY (1, 1) NOT NULL,
+    [Email]     NVARCHAR (MAX) NULL,
+    [Password] NVARCHAR (MAX) NULL,
+    CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+//Veri ekleme sql ifadesi
+INSERT INTO "User" VALUES ('ismail@gmail.com','123456')
